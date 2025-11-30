@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кентофарики | KLIMASH.GG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="code-rain-background"></div> 
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">KLIMASH.GG</a></div>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="achievements.html">Достижения</a>
+                <a href="contact.html">Контакты</a>
+                <a href="kentofariki.html">Кентофарики</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="neon-text" style="text-align: center; margin-bottom: 3rem;">
+            Мои Кентофарики
+        </h1>
+        
+        <div class="kentofariki-list">
+            
+            <div class="kentofarik-card" 
+                 data-name='Михаил Синько"' 
+                 data-photo='misha.jpg'
+                 data-description='Михаил Синько не просто спиздил хуйню, он ей управляет (Верни говно пидор)".'>
+                <h3>Михаил Синько</h3>
+                <p>Главный по крипте(хуйне) Ну полной хуйне ну рил ну бля реально залупу делает </p>
+                <button class="neon-button small-button show-details" style="margin-top: 1rem;">
+                    Подробнее
+                </button>
+            </div>
+
+            <div class="kentofarik-card" 
+                 data-name='Ярослав Вайбкодер"' 
+                 data-photo='yarik_vibe.png'
+                 data-description='Ярослав Алексеев - Гандон невероятнейший люблю его не могу".'>
+                <h3>Ярослав Вайбкодер
+                </h3>
+                <p>Любитель Минета</p>
+                <button class="neon-button small-button show-details" style="margin-top: 1rem;">
+                    Подробнее
+                </button>
+            </div>
+            <div class="kentofarik-card" 
+         data-name='Ксюша - Хранитель 15' 
+         data-photo='ksyha.jpg'
+         data-description='Ксюша — не просто брутал, а почти брутал екс'>
+        <h3>Ксюша - Хранитель 15</h3>
+        <p>Наш командный пиздец.</p>
+        <button class="neon-button small-button show-details" style="margin-top: 1rem;">
+            Подробнее
+        </button>
+    </div>
+
+    <div class="kentofarik-card" 
+         data-name='Тимур' 
+         data-photo='timur.jpg'
+         data-description='Полный ебанат - ну серьезно он отхуярил в унту пол жизни и забанил себе аккаунт нахуй он проклят блять(он просто ахуенен)'>
+        <h3>Тимур</h3>
+        <p>Лудоман, читер, стандофчик, и еблан.</p>
+        <button class="neon-button small-button show-details" style="margin-top: 1rem;">
+            Подробнее
+        </button>
+    </div>
+    <div class="kentofarik-card" 
+         data-name='Кося' 
+         data-photo='kosya.jpg'
+         data-description='Кося — полный уебок, но если выбирать с кем нажраться, я выберу его, на инвокере ебашит просто восхитительно(Любит быть сверху).'>
+        <h3>Кося</h3>
+        <p>тупой еблан.</p>
+        <button class="neon-button small-button show-details" style="margin-top: 1rem;">
+            Подробнее
+        </button>
+    </div>
+
+        </div>
+    </main>
+    
+    <div id="kentofarik-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <img id="modal-photo" src="" alt="Фото кентофарика">
+                <h3 id="modal-name" class="neon-text"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 KLIMASH.GG - Vibe Coded
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

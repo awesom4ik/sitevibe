@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Климаш Егор | Титан Доты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">KLIMASH.GG</a></div>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="achievements.html">Достижения</a>
+                <a href="contact.html">Контакты</a>
+                <a href="kentofariki.html">Кентофарики</a>
+            </div>
+        </nav>
+    </header>
+
+   <main class="container">
+    <section class="hero" style="text-align: center; padding: 5rem 0;">
+        <h1 class="neon-text flicker-neon" style="font-size: 4rem; margin-bottom: 1rem;">
+            Егор Климаш
+        </h1>
+        <h2 style="font-size: 2rem; color: var(--neon-purple); text-shadow: 0 0 5px var(--neon-purple);">
+            Titan by Dalbaeb | Rofl
+        </h2>
+        
+        <p id="typing-text" style="margin: 2rem auto; max-width: 600px; line-height: 1.6;">
+        </p> 
+        
+        <button id="show-my-details" class="neon-button" 
+                data-name='Егор Климаш' 
+                data-photo='klimash.jpg'
+                data-description='Я — Егор Климаш, все что вы обо мне знаете, полный пиздежь я вам всем вру вы тут потому что я еблан. А ну и еще я кяв энжоер'
+                style="margin-right: 1rem;">
+            Подробнее обо мне
+        </button>
+
+        <a href="achievements.html" class="neon-button">
+            Мои Главные Катки
+        </a>
+
+    </section>
+</main>
+
+<div id="self-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button self-close">&times;</span>
+        <div class="modal-body">
+            <img id="self-modal-photo" src="" alt="Фото Егора Климаша">
+            <h3 id="self-modal-name" class="neon-text"></h3>
+            <p id="self-modal-description"></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 KLIMASH.GG - Vibe Coded
+</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
