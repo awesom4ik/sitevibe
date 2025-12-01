@@ -28,6 +28,8 @@ body {
     flex-direction: column;
     position: relative;
     overflow-x: hidden;
+
+    cursor: crosshair;
 }
 
 /* БЛОК body::before БОЛЬШЕ НЕ НУЖЕН И УДАЛЕН ИЗ ЭТОЙ ВЕРСИИ */
@@ -333,4 +335,108 @@ footer {
     line-height: 1.5;
     opacity: 0.9;
     padding: 0 10px;
+}
+/* style.css (Добавить в конец) */
+
+/* Стили для курсора-указателя */
+a, 
+button, 
+.neon-button, 
+.kentofarik-card,
+.close-button {
+    /* КЛИКАБЕЛЬНЫЕ ЭЛЕМЕНТЫ: Стандартная рука */
+    cursor: pointer;
+}
+/* style.css (ДОБАВИТЬ В САМЫЙ КОНЕЦ ФАЙЛА) */
+
+/* ======================================= */
+/* ====== МЕДИА-ЗАПРОСЫ (RESPONSIVE) ====== */
+/* ======================================= */
+
+/* --- Планшеты и вертикальные смартфоны (Макс. ширина 768px) --- */
+@media (max-width: 768px) {
+    
+    /* Уменьшаем отступы контейнера */
+    .container {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    /* --- Навигация: Сворачиваем меню --- */
+    header {
+        padding: 1rem 0;
+    }
+    
+    nav {
+        flex-direction: column; /* Элементы идут вертикально */
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-links a {
+        display: block; /* Ссылки занимают всю ширину */
+        margin: 0.3rem 0.5rem; 
+        text-align: center;
+    }
+    
+    /* --- Главная секция (Hero) --- */
+    .hero h1 {
+        font-size: 2.5rem !important; /* !important для переопределения инлайн-стиля */
+    }
+
+    .hero h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Уменьшаем размер текста для печати */
+    #typing-text {
+        font-size: 0.9rem;
+    }
+    
+    /* --- Карточки: Переводим на 1 столбец --- */
+    .achievement-list,
+    .kentofariki-list {
+        grid-template-columns: 1fr; /* Один столбец на всю ширину */
+    }
+
+    /* Уменьшаем отступ карточек */
+    .achievement-card,
+    .kentofarik-card {
+        padding: 1.5rem;
+    }
+    
+    /* --- Модальное окно --- */
+    .modal-content {
+        width: 90%;
+        max-width: 450px;
+    }
+    
+    #modal-photo, #self-modal-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+/* --- Мелкие смартфоны (Макс. ширина 500px) --- */
+@media (max-width: 500px) {
+    
+    .hero h1 {
+        font-size: 2rem !important;
+    }
+    
+    .neon-button {
+        display: block; /* Кнопки занимают всю ширину */
+        width: 95%;
+        margin: 0.5rem auto;
+    }
+    
+    /* Уменьшаем плотность кода на фоне, чтобы не тормозило */
+    .code-column {
+        font-size: 0.8rem;
+    }
 }
